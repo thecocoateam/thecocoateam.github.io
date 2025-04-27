@@ -1,1 +1,155 @@
-Hello niggas
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE LOST REALIES</title>
+    <style>
+        :root {
+            --bg-dark: #121212;
+            --bg-darker: #0a0a0a;
+            --text-primary: #e0e0e0;
+            --text-secondary: #aaaaaa;
+            --accent-color: #bb86fc;
+            --accent-dark: #3700b3;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--bg-darker);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        h1, h2, h3 {
+            color: var(--accent-color);
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--bg-dark);
+            padding: 0.7rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: var(--accent-dark);
+            color: white;
+        }
+        
+        .card {
+            background-color: var(--bg-darker);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        
+        footer {
+            background-color: var(--bg-darker);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            color: var(--text-secondary);
+        }
+        
+        /* Анимации */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        body {
+            animation: fadeIn 0.5s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">DarkSite</a>
+            <div class="nav-links">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">STORE</a>
+                <a href="#">CONTACTS</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Welcome to the beginning of your journey.</h1>
+            <p>Sure you don't want to close this page as long as you explore it</p>
+            <a href="#" class="btn">Начать</a>
+        </section>
+        
+        <section class="card">
+            <h2>О нашем сайте</h2>
+            <p>Этот сайт использует тёмную цветовую схему, которая легче воспринимается глазами в условиях низкой освещённости и помогает снизить нагрузку на зрение.</p>
+        </section>
+        
+        <section class="card">
+            <h2>Преимущества</h2>
+            <ul>
+                <li>Снижение нагрузки на глаза</li>
+                <li>Экономия энергии на OLED-экранах</li>
+                <li>Современный и стильный внешний вид</li>
+                <li>Улучшенная концентрация на контенте</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 DarkSite. Все права защищены.</p>
+    </footer>
+</body>
+</html>
